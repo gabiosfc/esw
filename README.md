@@ -15,7 +15,7 @@ Para configurar a conexão com o banco de dados, é necessário modificar as cre
 Certifique-se de inserir as informações corretas de usuário e senha para a sua instância do banco de dados.
 
 ## Estrutura do Repositório
-- esw (Repositório): Link para o Repositório
+- esw (Repositório): [Link para o Repositório](https://github.com/gabiosfc/esw/tree/main)
 - Mabi (Projeto):
 - SQL (Diretório): Contém o arquivo SQL com a estrutura das tabelas do banco de dados.
 - src (Diretório): Contém o código-fonte do projeto, desenvolvido no NetBeans utilizando JPanel e JTable.
