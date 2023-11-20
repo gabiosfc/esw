@@ -16,9 +16,9 @@ Certifique-se de inserir as informações corretas de usuário e senha para a su
 
 ## Estrutura do Repositório
 - esw (Repositório): [Link para o Repositório](https://github.com/gabiosfc/esw/tree/main)
-- Mabi (Projeto): Contém o código-fonte do projeto, desenvolvido no NetBeans utilizando JPanel e JTable.
-- sql (Diretório): Contém o arquivo SQL com a estrutura das tabelas do banco de dados.
-- docs (Diretório): Documentação adicional ou diagramas UML, se houver.
+    - Mabi (Projeto): Contém o código-fonte do projeto, desenvolvido no NetBeans utilizando JPanel e JTable.
+    - sql (Diretório): Contém o arquivo SQL com a estrutura das tabelas do banco de dados.
+    - docs (Diretório): Documentação adicional ou diagramas UML, se houver.
 
 ## Instruções de Uso
 Configuração do Banco de Dados:
