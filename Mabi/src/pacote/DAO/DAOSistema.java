@@ -124,7 +124,7 @@ public class DAOSistema {
                 "    p.id AS id_pedido," +
                 "    p.mesa," +
                 "    p.valor_total," +
-                "    GROUP_CONCAT(c.nome ORDER BY pp.id_produto SEPARATOR ', ') AS produtos," +
+                "    GROUP_CONCAT(CONCAT(c.nome, ' (', pp.quantidade, ')') ORDER BY pp.id_produto SEPARATOR ', ') AS produtos," +
                 "    p.status_pedido " +
                 "FROM " +
                 "    pedidos p " +

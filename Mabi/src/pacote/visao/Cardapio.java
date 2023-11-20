@@ -421,42 +421,45 @@ public class Cardapio extends javax.swing.JFrame {
 
     private void botaoConfirmarPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoConfirmarPedidoActionPerformed
         String mesa = (String) comboMesa.getSelectedItem();
+        
         if(mesa.equals("0")){
             JOptionPane.showMessageDialog(null,"Informe o número da sua mesa." );
         } 
         
         if(valorTotal == 0){
             JOptionPane.showMessageDialog(null,"Selecione pelo menos 1 produto para confirmar o pedido." );
+        } else {
+            
+            int pedidoId = salvarPedido(); 
+            
+            int qtdItem1 = Integer.parseInt(comboQtdItem1.getSelectedItem().toString());
+            int qtdItem2 = Integer.parseInt(comboQtdItem2.getSelectedItem().toString());
+            int qtdItem3 = Integer.parseInt(comboQtdItem3.getSelectedItem().toString());
+            int qtdItem4 = Integer.parseInt(comboQtdItem4.getSelectedItem().toString());
+            int qtdItem5 = Integer.parseInt(comboQtdItem5.getSelectedItem().toString());
+
+            if (qtdItem1 > 0){
+                salvarPedidoProdutos(pedidoId, idItem1, qtdItem1);
+            }
+
+            if (qtdItem2 > 0){
+                salvarPedidoProdutos(pedidoId, idItem2, qtdItem2);
+            }
+
+            if (qtdItem3 > 0){
+                salvarPedidoProdutos(pedidoId, idItem3, qtdItem3);
+            }
+
+            if (qtdItem4 > 0){
+                salvarPedidoProdutos(pedidoId, idItem4, qtdItem2);
+            }
+
+            if (qtdItem5 > 0){
+                salvarPedidoProdutos(pedidoId, idItem5, qtdItem5);
+            }
+        
         }
-        
-        int pedidoId = salvarPedido(); 
-        
-        int qtdItem1 = Integer.parseInt(comboQtdItem1.getSelectedItem().toString());
-        int qtdItem2 = Integer.parseInt(comboQtdItem2.getSelectedItem().toString());
-        int qtdItem3 = Integer.parseInt(comboQtdItem3.getSelectedItem().toString());
-        int qtdItem4 = Integer.parseInt(comboQtdItem4.getSelectedItem().toString());
-        int qtdItem5 = Integer.parseInt(comboQtdItem5.getSelectedItem().toString());
-        
-        if (qtdItem1 > 0){
-            salvarPedidoProdutos(pedidoId, idItem1, qtdItem1);
-        }
-        
-        if (qtdItem2 > 0){
-            salvarPedidoProdutos(pedidoId, idItem2, qtdItem2);
-        }
-        
-        if (qtdItem3 > 0){
-            salvarPedidoProdutos(pedidoId, idItem3, qtdItem3);
-        }
-        
-        if (qtdItem4 > 0){
-            salvarPedidoProdutos(pedidoId, idItem4, qtdItem2);
-        }
-        
-        if (qtdItem5 > 0){
-            salvarPedidoProdutos(pedidoId, idItem5, qtdItem5);
-        }
-        
+               
         limparCampos();
     }//GEN-LAST:event_botaoConfirmarPedidoActionPerformed
 
