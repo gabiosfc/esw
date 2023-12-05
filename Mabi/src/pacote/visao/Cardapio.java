@@ -424,9 +424,7 @@ public class Cardapio extends javax.swing.JFrame {
         
         if(mesa.equals("0")){
             JOptionPane.showMessageDialog(null,"Informe o número da sua mesa." );
-        } 
-        
-        if(valorTotal == 0){
+        } else if(valorTotal == 0){
             JOptionPane.showMessageDialog(null,"Selecione pelo menos 1 produto para confirmar o pedido." );
         } else {
             

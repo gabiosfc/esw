@@ -20,7 +20,7 @@ public class FabricaConexao {
     try {
         Class.forName("com.mysql.cj.jdbc.Driver");
         String url = ("jdbc:mysql://127.0.0.1/sistema_pedidos");
-        con = DriverManager.getConnection(url, "root", ""); // << Insira aqui suas credenciais do BD
+        con = DriverManager.getConnection(url, "root", "Root@1993");
     } catch (ClassNotFoundException ex) {
         throw new SQLException("Driver do MySQL não encontrado.", ex);
     }
